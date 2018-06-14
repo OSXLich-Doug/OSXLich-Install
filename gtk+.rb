@@ -19,8 +19,8 @@ class Gtkx < Formula
 
 #  fails_with :llvm do
 #    build 2326
- #   cause "Undefined symbols when linking"
-  end
+#   cause "Undefined symbols when linking"
+#  end
 
   def install
     args = ["--disable-dependency-tracking",
