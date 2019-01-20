@@ -14,7 +14,7 @@ class Gtkx < Formula
   depends_on "jasper" => :optional
   depends_on "atk"
   depends_on "pango"
-  depends_on :x11 => ["2.3.6", :recommended]
+#  depends_on :x11 => ["2.3.6", :recommended]
   depends_on "gobject-introspection"
 
 #  fails_with :llvm do
