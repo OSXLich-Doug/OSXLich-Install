@@ -31,7 +31,7 @@ class Pango < Formula
   # For discussion, see https://bugzilla.gnome.org/show_bug.cgi?id=787867
   patch do
     url "https://gitlab.gnome.org/tschoonj/pango/commit/60df2b006e5d4553abc7bb5fe9a99539c91b0022.patch"
-    sha256 "d5ece753cf393ef507dd2b0415721b4381159da5e2f40793c6d85741b1b163bc"
+    sha256 "6fe3f450a3d42d1d2705e701004397dd7b409028d4dd797dbcc3d2588a474083"
   end
 
   def install
