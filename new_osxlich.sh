@@ -286,13 +286,13 @@ hack_Timer 'Homebrew checkpoint'
 
 # Now xQuartz
 valid_XQ="$(XQ_ver)"
-$XQUARTZREQ=FALSE
+XQUARTZREQ=FALSE
 
 if [[ "$valid_XQ" =~ "version" ]]; then
     user_echo "Your system already has xQuartz installed.  $(echo_pass)";
     user_echo ""
 else
-	$XQUARTZREQ=TRUE
+	XQUARTZREQ=TRUE
     brew tap Caskroom/cask
     brew install Caskroom/cask/xquartz
 fi
@@ -375,7 +375,7 @@ hack_Timer 'Ruby 2.6.5 checkpoint'
 
 curl -OL https://github.com/OSXLich-Doug/OSXLich-Install/raw/master/OldSkoolBrew.zip
 unzip OldSkoolBrew.zip
-cp $HOME/OldSkoolBrew/* /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formulas
+cp ./OldSkoolBrew/* /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/
 
 hack_Timer 'Archive files in place.  Light it up!'
 
