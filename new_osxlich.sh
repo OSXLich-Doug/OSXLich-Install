@@ -361,7 +361,7 @@ if $RUBYREQ; then
     rbenv install 2.6.5
     user_echo "Setting Ruby version 2.6.5 as the global Ruby."
     user_echo ""
-    source ./.bash_profile
+    source ~/.bash_profile
     sleep 5s
     rbenv global 2.6.5
     ruby -v
